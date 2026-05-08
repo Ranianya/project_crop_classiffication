@@ -1,0 +1,17 @@
+# On ignore les environnements virtuels
+env/
+venv/
+.venv/
+
+# On ignore les fichiers de cache Python (fichiers compilés)
+__pycache__/
+*.pyc
+
+# On ignore les dossiers de données volumineux (si vous en avez)
+data/raw/
+data/processed/
+
+# On ignore les fichiers checkpoints du modèle (trop lourds pour GitHub)
+*.h5
+*.pt
+*.pth

@@ -1,0 +1,4 @@
+Modèle,Accuracy,F1-score,Gain vs Partie 1,Gain vs Partie 2
+MCTNet (Partie 1),0.907,0.923,-,-
+MCTNet + Climat (Partie 2),0.9747,0.9664,+0.0677,-
+MCTNetImproved (Partie 3),0.9049591280653951,0.9099982723102135,+-0.0020,+-0.0697

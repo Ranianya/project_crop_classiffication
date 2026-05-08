@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c1b0bf9fffe7c8b1306b3d1201ba48c5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c1b0bf9fffe7c8b1306b3d1201ba48c5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c1b0bf9fffe7c8b1306b3d1201ba48c5 = L.map(
+                "map_c1b0bf9fffe7c8b1306b3d1201ba48c5",
+                {
+                    center: [36.5, -119.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8bd6aae44e45008d7a8263c9f4571726 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8bd6aae44e45008d7a8263c9f4571726.addTo(map_c1b0bf9fffe7c8b1306b3d1201ba48c5);
+        
+    
+            var tile_layer_1edbcb59390897aa9914f8594bbc1f0c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1edbcb59390897aa9914f8594bbc1f0c.addTo(map_c1b0bf9fffe7c8b1306b3d1201ba48c5);
+        
+    
+            var tile_layer_4fedf2b30b86e8a9994fb7d3c6f38700 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4fedf2b30b86e8a9994fb7d3c6f38700.addTo(map_c1b0bf9fffe7c8b1306b3d1201ba48c5);
+        
+    
+            var rectangle_a5ff52c276888b00e8ff39d944111e54 = L.rectangle(
+                [[38.346923522380486, -121.89383820663247], [38.65306937120842, -121.57188200880402]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1b0bf9fffe7c8b1306b3d1201ba48c5);
+        
+    
+        var popup_4840496d8129bf3539862edd44a8c926 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_016543a590de06c71626d61d5743cfcd = $(`<div id="html_016543a590de06c71626d61d5743cfcd" style="width: 100.0%; height: 100.0%;">Sentinel Tile 1<br>MCTNet_14GB_California_North-5.tif</div>`)[0];
+                popup_4840496d8129bf3539862edd44a8c926.setContent(html_016543a590de06c71626d61d5743cfcd);
+            
+        
+
+        rectangle_a5ff52c276888b00e8ff39d944111e54.bindPopup(popup_4840496d8129bf3539862edd44a8c926)
+        ;
+
+        
+    
+    
+            var rectangle_9d018362786b757907e0b1297ebf9dd9 = L.rectangle(
+                [[38.346923522380486, -121.57188200880402], [38.65306937120842, -121.50540667777918]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_c1b0bf9fffe7c8b1306b3d1201ba48c5);
+        
+    
+        var popup_d372be7ab86d30dd8cef695fad4722e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb403a13f646f8a643942fd7545690ad = $(`<div id="html_fb403a13f646f8a643942fd7545690ad" style="width: 100.0%; height: 100.0%;">Sentinel Tile 2<br>MCTNet_14GB_California_North-6.tif</div>`)[0];
+                popup_d372be7ab86d30dd8cef695fad4722e1.setContent(html_fb403a13f646f8a643942fd7545690ad);
+            
+        
+
+        rectangle_9d018362786b757907e0b1297ebf9dd9.bindPopup(popup_d372be7ab86d30dd8cef695fad4722e1)
+        ;
+
+        
+    
+    
+            var rectangle_737a5dd33ff39ee16961affbf7b28cef = L.rectangle(
+                [[1242375.0, -2356095.0], [2452725.0, -1646655.0]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_c1b0bf9fffe7c8b1306b3d1201ba48c5);
+        
+    
+        var popup_12f62c5d1bc47109ed10c83979a8bad3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cad7a6622d6ed08bf0fc679e0955c963 = $(`<div id="html_cad7a6622d6ed08bf0fc679e0955c963" style="width: 100.0%; height: 100.0%;">CDL: california.tif</div>`)[0];
+                popup_12f62c5d1bc47109ed10c83979a8bad3.setContent(html_cad7a6622d6ed08bf0fc679e0955c963);
+            
+        
+
+        rectangle_737a5dd33ff39ee16961affbf7b28cef.bindPopup(popup_12f62c5d1bc47109ed10c83979a8bad3)
+        ;
+
+        
+    
+    
+            var rectangle_bb78297d83c67466bf6456c41e989d2a = L.rectangle(
+                [[1705065.0, -2179305.0], [1859145.0, -1956135.0]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_c1b0bf9fffe7c8b1306b3d1201ba48c5);
+        
+    
+        var popup_aedcba4de36ecf9b9be0b66eca2c31c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58849ff71751982901a90c36f1266606 = $(`<div id="html_58849ff71751982901a90c36f1266606" style="width: 100.0%; height: 100.0%;">CDL: californiaFresno.tif</div>`)[0];
+                popup_aedcba4de36ecf9b9be0b66eca2c31c6.setContent(html_58849ff71751982901a90c36f1266606);
+            
+        
+
+        rectangle_bb78297d83c67466bf6456c41e989d2a.bindPopup(popup_aedcba4de36ecf9b9be0b66eca2c31c6)
+        ;
+
+        
+    
+    
+            var rectangle_6d169fcc6af3f4e4c38c7b9ea916eae5 = L.rectangle(
+                [[1674975.0, -2151315.0], [1751685.0, -2064975.0]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_c1b0bf9fffe7c8b1306b3d1201ba48c5);
+        
+    
+        var popup_83d716463796ee51107c7c4f0a1fc068 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d6a5e322e5603b3f8a5a43d02178aa9 = $(`<div id="html_8d6a5e322e5603b3f8a5a43d02178aa9" style="width: 100.0%; height: 100.0%;">CDL: californiaKings.tif</div>`)[0];
+                popup_83d716463796ee51107c7c4f0a1fc068.setContent(html_8d6a5e322e5603b3f8a5a43d02178aa9);
+            
+        
+
+        rectangle_6d169fcc6af3f4e4c38c7b9ea916eae5.bindPopup(popup_83d716463796ee51107c7c4f0a1fc068)
+        ;
+
+        
+    
+    
+            var rectangle_84f2c660a6cb3ea534021d51d19304a6 = L.rectangle(
+                [[1994595.0, -2241045.0], [2079585.0, -2174475.0]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_c1b0bf9fffe7c8b1306b3d1201ba48c5);
+        
+    
+        var popup_caaeea5aed5e171f5af62ee99b478519 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_130326c1c2cc5388596a74a1be92f9cc = $(`<div id="html_130326c1c2cc5388596a74a1be92f9cc" style="width: 100.0%; height: 100.0%;">CDL: californiaNorth.tif</div>`)[0];
+                popup_caaeea5aed5e171f5af62ee99b478519.setContent(html_130326c1c2cc5388596a74a1be92f9cc);
+            
+        
+
+        rectangle_84f2c660a6cb3ea534021d51d19304a6.bindPopup(popup_caaeea5aed5e171f5af62ee99b478519)
+        ;
+
+        
+    
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_c1b0bf9fffe7c8b1306b3d1201ba48c5);
+        
+    
+            var layer_control_a51803e201a70d2c693222396afffa6f_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_8bd6aae44e45008d7a8263c9f4571726,
+                    "OpenStreetMap" : tile_layer_1edbcb59390897aa9914f8594bbc1f0c,
+                    "Dark Map" : tile_layer_4fedf2b30b86e8a9994fb7d3c6f38700,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_a51803e201a70d2c693222396afffa6f = L.control.layers(
+                layer_control_a51803e201a70d2c693222396afffa6f_layers.base_layers,
+                layer_control_a51803e201a70d2c693222396afffa6f_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_c1b0bf9fffe7c8b1306b3d1201ba48c5);
+
+        
+</script>
+</html>
