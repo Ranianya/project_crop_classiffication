@@ -1,0 +1,27 @@
+FINAL RESULTS
+
+BASELINE
+OA     : 0.7940
+F1     : 0.7851
+Kappa  : 0.6681
+
+CLIMATE
+OA     : 0.8011
+F1     : 0.7965
+Kappa  : 0.6793
+
+SOIL
+OA     : 0.7954
+F1     : 0.7911
+Kappa  : 0.6672
+
+TOPOGRAPHY
+OA     : 0.7893
+F1     : 0.7733
+Kappa  : 0.6656
+
+FULL
+OA     : 0.7351
+F1     : 0.7103
+Kappa  : 0.5838
+
