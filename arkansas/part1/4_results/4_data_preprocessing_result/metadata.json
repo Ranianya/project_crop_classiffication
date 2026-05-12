@@ -1,0 +1,54 @@
+{
+    "classes": [
+        "Corn",
+        "Cotton",
+        "Others",
+        "Soybeans"
+    ],
+    "num_classes": 4,
+    "num_timesteps": 36,
+    "num_bands": 10,
+    "input_shape": [
+        36,
+        10
+    ],
+    "mask_convention": "1=valid, 0=missing",
+    "normalization": "none (raw L2A reflectance)",
+    "target_crs": "EPSG:5070",
+    "coords_files": "coords_train/val/test.npy",
+    "coords_columns": [
+        "x_epsg5070",
+        "y_epsg5070"
+    ],
+    "coords_dtype": "float64",
+    "coords_usage": "Use these coordinates in Part 2 to sample climate/soil/topography rasters. Example: rasterio.sample.sample_gen(raster, coords)",
+    "splits": {
+        "train": {
+            "n_samples": 960,
+            "class_distribution": {
+                "Corn": 240,
+                "Cotton": 240,
+                "Others": 240,
+                "Soybeans": 240
+            }
+        },
+        "val": {
+            "n_samples": 240,
+            "class_distribution": {
+                "Corn": 60,
+                "Cotton": 60,
+                "Others": 60,
+                "Soybeans": 60
+            }
+        },
+        "test": {
+            "n_samples": 9300,
+            "class_distribution": {
+                "Corn": 758,
+                "Cotton": 426,
+                "Others": 5142,
+                "Soybeans": 2974
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+Confusion Matrix:
+==================================================
+               Corn           Cotton         Others         Soybeans       
+Corn           692            3              25             38             
+Cotton         0              413            3              10             
+Others         550            73             3988           531            
+Soybeans       213            101            278            2382           
+
+Normalized (%):
+Corn           91.3           0.4            3.3            5.0            
+Cotton         0.0            96.9           0.7            2.3            
+Others         10.7           1.4            77.6           10.3           
+Soybeans       7.2            3.4            9.3            80.1           

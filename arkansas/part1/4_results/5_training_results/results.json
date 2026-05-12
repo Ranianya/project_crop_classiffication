@@ -1,0 +1,12 @@
+{
+  "test_oa": 0.8181720430107526,
+  "test_kappa": 0.7052124330723522,
+  "test_f1": 0.7924572638770193,
+  "overfitting_gap": -0.017708333333333326,
+  "hyperparameters": {
+    "batch_size": 64,
+    "dropout": 0.5,
+    "learning_rate": 0.0005,
+    "weight_decay": 1e-05
+  }
+}

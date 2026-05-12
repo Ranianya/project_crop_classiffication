@@ -15,3 +15,31 @@ data/processed/
 *.h5
 *.pt
 *.pth
+
+# ============================================
+# SENTINEL-2 DATA (LARGE FILES)
+# ============================================
+
+# Raw Sentinel-2 shards
+MCTNet_14GB_*.tif
+1_data_sentinel/*.tif
+*.tif
+
+# Reprojected Sentinel-2 files
+*_5070.tif
+processed/_reprojected/*.tif
+
+# ============================================
+# CDL DATA (LARGE FILES)
+# ============================================
+
+# Full CDL
+CDL_2021_05.tif
+
+# Extracted CDL for Arkansas
+CDL_Arkansas_*.tif
+2_data_cdl/*.tif
+
+# NumPy binary files (large)
+*.npy
+*.npz
