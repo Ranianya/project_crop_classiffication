@@ -1,0 +1,1 @@
+> **Note:** The `california/` directory corresponds to the `notebooks/`, `part2/`, and `part3/` folders shown in the repository structure. These contain all California-specific data processing, exploration, and training code.
