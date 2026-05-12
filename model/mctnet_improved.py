@@ -230,7 +230,7 @@ class CrossAttentionFusion(nn.Module):
     Cross-Attention Fusion au lieu de simple addition
     Permet aux branches CNN et Transformer de s'informer mutuellement
     """
-    def __init__(self, d_model, nhead, dropout=0.1):
+    def __init__(self, d_model, nhead, dropout=0.5):
         super().__init__()
         # Attention de CNN vers Transformer
         self.cnn_to_trans = nn.MultiheadAttention(d_model, nhead, dropout=dropout, batch_first=True)
@@ -258,7 +258,7 @@ class CrossAttentionFusion(nn.Module):
 # ============================================
 class CTFusionImproved(nn.Module):
     """CTFusion avec Cross-Attention au lieu d'addition simple"""
-    def __init__(self, d_model, nhead, kernel_sizes=[3, 5, 7], use_alpe=False, dropout=0.1):
+    def __init__(self, d_model, nhead, kernel_sizes=[3, 5, 7], use_alpe=False, dropout=0.5):
         super().__init__()
         self.cnn = CNNSubmodule(d_model, hidden_channels=d_model*2, kernel_sizes=kernel_sizes, dropout=dropout)
         self.transformer = TransformerSubmodule(d_model, nhead, use_alpe=use_alpe, dropout=dropout)
@@ -282,7 +282,7 @@ class CTFusionImproved(nn.Module):
 class MCTNetImproved(nn.Module):
     """MCTNet amélioré avec Cross-Attention Fusion"""
     def __init__(self, input_channels=13, time_steps=36, d_model=64, nhead=4,
-                 n_stages=3, n_classes=5, kernel_sizes=[3, 5, 7], dropout=0.1,
+                 n_stages=3, n_classes=5, kernel_sizes=[3, 5, 7], dropout=0.5,
                  covariate_dim=0):
         super().__init__()
         assert d_model % nhead == 0
@@ -363,11 +363,11 @@ if __name__ == "__main__":
         n_stages=3,
         n_classes=5,
         kernel_sizes=[3, 5, 7],
-        dropout=0.1,
+        dropout=0.5,
         covariate_dim=0
     ).to(device)
     
-    print(f"✅ MCTNetImproved créé")
+    print(f" MCTNetImproved créé")
     print(f"   Paramètres: {sum(p.numel() for p in model.parameters()):,}")
     
     # Test forward pass
@@ -378,4 +378,4 @@ if __name__ == "__main__":
         logits, _ = model(x, mask)
     
     print(f"   Forward pass OK: {logits.shape}")
-    print("\n✅ Modèle prêt à l'emploi !")
+    print("\n Modèle prêt à l'emploi !")
